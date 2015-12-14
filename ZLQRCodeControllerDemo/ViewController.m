@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "ZLQRCodeViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -16,12 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)click:(id)sender {
+    ZLQRCodeViewController *qr = [[ZLQRCodeViewController alloc] initWithScanResultHandler:^(AVMetadataMachineReadableCodeObject *metaObject) {
+        NSLog(@"%@", metaObject.stringValue);
+    }];
+    qr.type = ZLQRCodeCameraManagerMetaDataTypeQR;
+    if (qr) {
+        [self presentViewController:qr animated:YES completion:nil];
+    }
 }
 
 @end

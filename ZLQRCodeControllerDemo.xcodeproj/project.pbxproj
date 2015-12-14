@@ -13,6 +13,12 @@
 		305C7C821C1A9F5F000284AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305C7C801C1A9F5F000284AB /* Main.storyboard */; };
 		305C7C841C1A9F5F000284AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305C7C831C1A9F5F000284AB /* Assets.xcassets */; };
 		305C7C871C1A9F5F000284AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 305C7C851C1A9F5F000284AB /* LaunchScreen.storyboard */; };
+		305C7C911C1A9FD0000284AB /* ZLQRCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 305C7C901C1A9FD0000284AB /* ZLQRCodeScanView.m */; };
+		305C7C941C1AA003000284AB /* ZLQRCodeDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 305C7C931C1AA003000284AB /* ZLQRCodeDrawView.m */; };
+		305C7C971C1AA04D000284AB /* UIView+ZLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 305C7C961C1AA04D000284AB /* UIView+ZLFrame.m */; };
+		305C7C9A1C1AA266000284AB /* ZLQRCodeCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 305C7C991C1AA266000284AB /* ZLQRCodeCameraManager.m */; };
+		308114611C1B5B20005B028C /* ZLQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3081145F1C1B5B20005B028C /* ZLQRCodeViewController.m */; };
+		308114621C1B5B20005B028C /* ZLQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308114601C1B5B20005B028C /* ZLQRCodeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		305C7C831C1A9F5F000284AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		305C7C861C1A9F5F000284AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		305C7C881C1A9F5F000284AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305C7C8F1C1A9FD0000284AB /* ZLQRCodeScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLQRCodeScanView.h; sourceTree = "<group>"; };
+		305C7C901C1A9FD0000284AB /* ZLQRCodeScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLQRCodeScanView.m; sourceTree = "<group>"; };
+		305C7C921C1AA003000284AB /* ZLQRCodeDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLQRCodeDrawView.h; sourceTree = "<group>"; };
+		305C7C931C1AA003000284AB /* ZLQRCodeDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLQRCodeDrawView.m; sourceTree = "<group>"; };
+		305C7C951C1AA04D000284AB /* UIView+ZLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZLFrame.h"; sourceTree = "<group>"; };
+		305C7C961C1AA04D000284AB /* UIView+ZLFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZLFrame.m"; sourceTree = "<group>"; };
+		305C7C981C1AA266000284AB /* ZLQRCodeCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLQRCodeCameraManager.h; sourceTree = "<group>"; };
+		305C7C991C1AA266000284AB /* ZLQRCodeCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLQRCodeCameraManager.m; sourceTree = "<group>"; };
+		3081145E1C1B5B20005B028C /* ZLQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLQRCodeViewController.h; sourceTree = "<group>"; };
+		3081145F1C1B5B20005B028C /* ZLQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLQRCodeViewController.m; sourceTree = "<group>"; };
+		308114601C1B5B20005B028C /* ZLQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZLQRCodeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 		305C7C761C1A9F5F000284AB /* ZLQRCodeControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				305C7C8E1C1A9F81000284AB /* ZLQRCodeController */,
 				305C7C7A1C1A9F5F000284AB /* AppDelegate.h */,
 				305C7C7B1C1A9F5F000284AB /* AppDelegate.m */,
 				305C7C7D1C1A9F5F000284AB /* ViewController.h */,
@@ -77,6 +95,24 @@
 				305C7C781C1A9F5F000284AB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		305C7C8E1C1A9F81000284AB /* ZLQRCodeController */ = {
+			isa = PBXGroup;
+			children = (
+				305C7C8F1C1A9FD0000284AB /* ZLQRCodeScanView.h */,
+				305C7C901C1A9FD0000284AB /* ZLQRCodeScanView.m */,
+				305C7C921C1AA003000284AB /* ZLQRCodeDrawView.h */,
+				305C7C931C1AA003000284AB /* ZLQRCodeDrawView.m */,
+				305C7C951C1AA04D000284AB /* UIView+ZLFrame.h */,
+				305C7C961C1AA04D000284AB /* UIView+ZLFrame.m */,
+				305C7C981C1AA266000284AB /* ZLQRCodeCameraManager.h */,
+				305C7C991C1AA266000284AB /* ZLQRCodeCameraManager.m */,
+				3081145E1C1B5B20005B028C /* ZLQRCodeViewController.h */,
+				3081145F1C1B5B20005B028C /* ZLQRCodeViewController.m */,
+				308114601C1B5B20005B028C /* ZLQRCodeViewController.xib */,
+			);
+			path = ZLQRCodeController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +175,7 @@
 			files = (
 				305C7C871C1A9F5F000284AB /* LaunchScreen.storyboard in Resources */,
 				305C7C841C1A9F5F000284AB /* Assets.xcassets in Resources */,
+				308114621C1B5B20005B028C /* ZLQRCodeViewController.xib in Resources */,
 				305C7C821C1A9F5F000284AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,9 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305C7C9A1C1AA266000284AB /* ZLQRCodeCameraManager.m in Sources */,
+				305C7C971C1AA04D000284AB /* UIView+ZLFrame.m in Sources */,
 				305C7C7F1C1A9F5F000284AB /* ViewController.m in Sources */,
+				305C7C911C1A9FD0000284AB /* ZLQRCodeScanView.m in Sources */,
 				305C7C7C1C1A9F5F000284AB /* AppDelegate.m in Sources */,
 				305C7C791C1A9F5F000284AB /* main.m in Sources */,
+				308114611C1B5B20005B028C /* ZLQRCodeViewController.m in Sources */,
+				305C7C941C1AA003000284AB /* ZLQRCodeDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +304,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZLQRCodeControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhao.ZLQRCodeControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,7 +317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZLQRCodeControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhao.ZLQRCodeControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +345,7 @@
 				305C7C8D1C1A9F5F000284AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
